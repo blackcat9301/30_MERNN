@@ -1,0 +1,28 @@
+div {
+    // display: flex;
+    margin-top: 10px;
+
+    a {
+        margin: 10px;
+        border: 1px solid black;
+        padding: 5px 10px;
+
+        &:hover {
+            color: white;
+            background: rgb(0, 0, 214);
+            border-color: rgb(0, 0, 214);
+
+        }
+    }
+
+    h1 {
+        // flex: 1 100%;
+        margin: 10px !important;
+        padding: 5px 10px;
+        font-size: 15px !important;
+        background: lightgrey;
+        text-align: center;
+        width: 400px;
+        letter-spacing: 10px;
+    }
+}
