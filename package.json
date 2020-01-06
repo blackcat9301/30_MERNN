@@ -18,10 +18,12 @@
     "react-scripts": "3.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm-run-all -p -l start:*",
+    "start:server": "cd server && yarn start",
+    "start:client": "cd client && yarn start",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "postinstall": "run-p install:*"
   },
   "eslintConfig": {
     "extends": "react-app"
