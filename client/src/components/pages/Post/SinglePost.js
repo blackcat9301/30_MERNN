@@ -5,4 +5,4 @@ const SinglePost = props => (
     Pojedynczy post    </div>
 );
 
-export default SinglePost;
+export default SinglePost;  

@@ -1,18 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Logo from '../../common/Logo/Logo';
+import MainMenu from '../../layout/MainMenu/MainMenu';
+import './NavBar.scss'
 
 class NavBar extends React.Component {
 
-  render() {
-    return (
-      <div>
-        <Link to='/'>Home</Link>
-        <Link to='/posts'>Posts</Link>
-        <Link to='/posts/new'>Add Post</Link>
-        <Link to='/contact'>Contact</Link>
-      </div>
-    );
-  }
+    state = {
+        links: [
+            { path: '/', title: 'Home' },
+            { path: '/posts/new', title: 'Add post' },
+            { path: '/posts', title: 'Posts' },
+            { path: '/contact', title: 'Contact' },
+        ],
+    };
+
+    render() {
+        const { links } = this.state;
+        return (
+            <nav className={'navbar'}>
+                <Logo />
+                <MainMenu links={links} />
+            </nav>
+        );
+    }
 
 }
 
