@@ -1,9 +1,9 @@
 import React from 'react';
-import PostForm from '../../features/PostForm/PostFormContainer';
+import PostForm from '../../featuers/PostForm/PostFormContainer';
 
 const NewPost = () => (
     <div>
-        <PageTitle>Add Post</PageTitle>
+        <PostForm />
     </div>
 );
 

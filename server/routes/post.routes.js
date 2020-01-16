@@ -10,3 +10,4 @@ router.route('/post/:id').get(PostController.getSinglePost);
 // add posts
 router.route('/posts').post(PostController.addPost);
 module.exports = router;
+    

@@ -7,7 +7,9 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "animate.css": "3.7.0",
+    "axios": "0.18.0",
     "node-sass": "4.12.0",
+    "npm-run-all": "4.1.5",
     "react": "^16.12.0",
     "react-animated-css": "1.2.1",
     "react-dom": "^16.12.0",
@@ -24,6 +26,11 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "author": "Agnieszka Kot <agnieszkakot22@gmail.com>",
+  "license": "MIT"
 }
